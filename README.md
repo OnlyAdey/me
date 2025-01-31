@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog writing</title>
+    <style>
+    
+        h1{
+            text-align: left;
+            font-size: larger;
+        }
+        h2{
+text-align: left;
+        }
+        img{
+            display: block;
+            margin: 0 auto;
+            padding: 50px;
+            border-radius: 24px;
+        }
+
+.me{
+    background-color: white;
+    display: left;
+    margin: 0 auto;
+    color: black;
+    padding: 24px;
+            border-radius: 5px;
+            box-shadow: 12px 1px 15px rgba(0 0 0 0) 0.7;
+            transition: all 150ms ease-in-out;
+}
+button:hover{
+            opacity: 0.5;
+            cursor: pointer;
+        }
+        .project{
+display: block;
+padding: 24px;
+            border-radius: 5px;
+            box-shadow: 12px 1px 15px rgba(0 0 0 0) 0.7;
+            transition: all 150ms ease-in-out;
+        }
+        .reviewTime{
+            display: block;
+            padding: 24px;
+            border-radius: 5px;
+            box-shadow: 12px 1px 15px rgba(0 0 0 0) 0.7;
+            transition: all 150ms ease-in-out;
+        }
+footer{
+            margin: 15px 0 0 10px;
+            text-align: left;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+        <h1>Blog writing</h1>
+        <h2><strong>Write from home, Remote working just for you</strong></h2>
+        <img src="20230328_104833_0000.png"
+         alt="Blog writing" 
+         width="300px">
+    <p>A blog is an online journal or informational website run by an individual, group, or corporation that offers regularly updated content (blog post) about a topic. It presents information in reverse chronological order and it is written in an informal or conversational style. Many organizations and businesses use blogs as part of their content marketing strategies to boost brand awareness and increase conversions. You also can do that in the convience of your home. 
+</p>
+    <p>Contact us today and get started.</p>
+    <button class="me"> <a href="http://www.mail.google.com/mail/adekunleadeola03@gmail.com" target="_blank"></a>Contact Us</button>
+    <button class="project"> <a href="http://www.127.0.0.1:5500/project.html" target="_blank"></a>Project</button>
+    <button class="reviewTime">Reviews</button>
+    <footer><p>About me</p>
+        <p>My name is Adekunle Adeola, I am a graduate of Bingham university, currently learning under Revslon to become a Front End Web developer. I am also the CEO of A's collection which deals majorly in perfumery.</p>
+    </footer>
+</body>
+<script>
+    function blog(){
+    let name = prompt("What is your name?");
+    let email = prompt("What is your email?");
+    let decision = prompt("What are your thoughts on this?");
+alert("Thank you, " + name + " We would be in touch soon");
+    }
+   let reviewTime = document.querySelector(".reviewTime");
+   reviewTime.addEventListener("click", blog);
+</script>
+</html>
